@@ -7,7 +7,7 @@ name = "skeletor"
 version = "0.1.0"
 description = "Deep codebase understanding and architecture visualization tool"
 readme = "README.md"
-license = "MIT"
+license = { text = "MIT" }
 keywords = ["architecture", "code-analysis", "knowledge-graph", "claude", "claude-code", "tree-sitter", "mermaid"]
 requires-python = ">=3.10"
 dependencies = [
