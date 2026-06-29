@@ -32,3 +32,6 @@ dependencies = [
 
 [project.scripts]
 skeletor = "skeletor.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["skeletor*"]

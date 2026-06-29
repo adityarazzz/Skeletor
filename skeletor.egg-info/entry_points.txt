@@ -1,2 +1,0 @@
-[console_scripts]
-skeletor = skeletor.__main__:main
