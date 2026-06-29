@@ -30,6 +30,8 @@ def export_all(graph: nx.DiGraph, report_md: str, diagrams: Dict[str, str], out_
 
     # 5. HTML Dashboard
     safe_report_md = json.dumps(report_md)
+    arch_diagram = diagrams.get('architecture', 'graph TD\nEmpty')
+    dep_diagram = diagrams.get('dependencies', 'graph TD\nEmpty')
     
     html_content = f"""<!DOCTYPE html>
 <html lang="en">
@@ -329,7 +331,7 @@ def export_all(graph: nx.DiGraph, report_md: str, diagrams: Dict[str, str], out_
             </div>
             <div class="canvas-body">
                 <div class="mermaid" style="width:100%;height:100%">
-{diagrams.get('architecture', 'graph TD\\nEmpty')}
+{arch_diagram}
                 </div>
             </div>
         </div>
@@ -342,7 +344,7 @@ def export_all(graph: nx.DiGraph, report_md: str, diagrams: Dict[str, str], out_
             </div>
             <div class="canvas-body">
                 <div class="mermaid" style="width:100%;height:100%">
-{diagrams.get('dependencies', 'graph TD\\nEmpty')}
+{dep_diagram}
                 </div>
             </div>
         </div>
