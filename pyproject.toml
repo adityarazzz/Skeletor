@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skeletor"
+version = "0.1.0"
+description = "Deep codebase understanding and architecture visualization tool"
+readme = "README.md"
+license = { text = "MIT" }
+keywords = ["architecture", "code-analysis", "knowledge-graph", "claude", "claude-code", "tree-sitter", "mermaid"]
+requires-python = ">=3.10"
+dependencies = [
+    "networkx",
+    "tree-sitter",
+    "tree-sitter-python",
+    "tree-sitter-javascript",
+    "tree-sitter-typescript",
+    "tree-sitter-go",
+    "tree-sitter-rust",
+    "tree-sitter-java",
+    "tree-sitter-c-sharp",
+    "tree-sitter-cpp",
+    "tree-sitter-ruby",
+    "tree-sitter-php",
+    "pydantic",
+    "rich",
+    "fastapi",
+    "uvicorn",
+    "mcp"
+]
+
+[project.scripts]
+skeletor = "skeletor.__main__:main"

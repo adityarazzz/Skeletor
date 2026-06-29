@@ -1,0 +1,17 @@
+networkx
+tree-sitter
+tree-sitter-python
+tree-sitter-javascript
+tree-sitter-typescript
+tree-sitter-go
+tree-sitter-rust
+tree-sitter-java
+tree-sitter-c-sharp
+tree-sitter-cpp
+tree-sitter-ruby
+tree-sitter-php
+pydantic
+rich
+fastapi
+uvicorn
+mcp
